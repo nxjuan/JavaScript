@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Gringo ou brasilerio??</h1>
+
+    Em qual continente você nasceu?<input type="text" id="nacionalidade">
+    <input type="button" value="Descobrir" onclick="nacionalidade()">
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function nacionalidade(){
+            var nacionalidade = window.document.getElementById('nacionalidade')
+
+            var resposta = document.getElementById('resposta')
+
+            resposta.innerText = `Você é originario da ${nacionalidade}.`
+
+            if(nacionalidade == 'europa' || nacionalidade == 'Europa'){
+                resposta.innerHTML += '<p>Voce é <strong>Europeu</strong></p>'
+            }
+
+            else if(nacionalidade == 'asia' || nacioinalidade == 'Asia'){
+                resposta.innerHTML += `<p>Você é <strong>asiático</strong></p>`} 
+            
+            else if(nacionalidade == 'africa' || nacionalidade == 'Africa'){
+                resposta.innerHTML += '<p>Você é <strong>africano</strong></p>'
+            }
+            else if(nacionalidade == 'america do sul' || nacionalidade == 'America do Sul'){
+                resposta.innerHTML += '<p>Você é <strong>latino</strong></p>'
+            }
+            else if(nacionalidade == 'america do norte' || nacionalidade == 'America do Norte'){
+                resposta.innerHTML += '<p>Você é <strong>norte-americano</strong></p>'
+            }
+            else if(nacionalidade == 'oceania' || nacionalidade == 'Oceania'){
+                resposta.innerHTML += '<p>Você é <strong>oceânico</strong></p>'
+            }
+        }
+    </script>
+
+
+</body>
+</html>

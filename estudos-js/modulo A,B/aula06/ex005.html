@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos</title>
+    <style>
+        body{
+            background-color: rgb(124, 119, 119)            
+        }
+        div{
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="outsider()">
+        <p>INTERAJA...</p>
+    </div>
+
+    <script>
+
+
+        var area = window.document.getElementById('area')
+
+        function clicar(){
+            area.style.background = 'darkblue'
+            area.innerHTML = "Clicou :D"
+        }
+        function entrar(){
+            area.innerHTML = "Entrou :)"
+            area.style.background = 'white'
+        }
+        function outsider(){
+            area.style.background = 'aquamarine'
+            area.innerHTML = "Saiu :("
+        }
+
+
+    </script>
+
+</body> 
+</html>

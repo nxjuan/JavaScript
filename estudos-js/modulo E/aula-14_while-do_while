@@ -1,0 +1,6 @@
+var num 
+console.log('Vai começar...')
+for(num=1;num<=5;num++){
+    console.log(`Aqui vai o ${num}° numero`)
+}
+console.log('===Fim===')
