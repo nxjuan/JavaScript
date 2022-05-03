@@ -1,0 +1,30 @@
+iframe {
+  width: 600px;
+  height: 250px;
+  border: 0;
+  border-radius: 9px;
+  position: absolute;
+  top: 55%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  color: #1C3F3F;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 40px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
